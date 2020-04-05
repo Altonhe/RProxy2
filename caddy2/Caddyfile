@@ -2,34 +2,41 @@ https://steamcommunity.com:443, www.steamcommunity.com:443 {
 #tls self_signed
 tls steamcommunity.crt steamcommunity.key
     # default/catchall
-    reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net {
-    
-    
-    
+    reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net  {
     header_up Host steamcommunity.com
-    transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+}
 }
 
-#http://:{8port0} {
-#redir / https://{host}{uri} 302
-#}
+https://store.steampowered.com:443 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    reverse_proxy  https://steamuserimages-a.akamaihd.net https://steamcdn-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net  {
+    header_up Host store.steampowered.com
+}
+}
 
+https://api.steampowered.com:443 {
+#tls self_signed
+tls steamcommunity.crt steamcommunity.key
+    # default/catchall
+    reverse_proxy https://steamuserimages-a.akamaihd.net https://steamcdn-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net  {
+    header_up Host api.steampowered.com
+}
+}
 
 https://discordapp.com:443 {
 tls steamcommunity.crt steamcommunity.key {
     protocols  tls1.2
 ciphers TLS_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_AES_128_GCM_SHA256 TLS_AES_256_GCM_SHA384 TLS_CHACHA20_POLY1305_SHA256 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
 }
-    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233 {
+    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://dl.discordapp.net:443 {
@@ -37,112 +44,116 @@ tls steamcommunity.crt steamcommunity.key {
     protocols  tls1.2
 ciphers TLS_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_AES_128_GCM_SHA256 TLS_RSA_WITH_AES_256_GCM_SHA384 TLS_AES_128_GCM_SHA256 TLS_AES_256_GCM_SHA384 TLS_CHACHA20_POLY1305_SHA256 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
 }
-    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232 {
+    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
 }
-
-#https://gateway.discord.gg:443 {
-#tls steamcommunity.crt steamcommunity.key
-#    reverse_proxy https://gateway.discord.gg {
-#    
-#    header_up Host {host}
-#     transport http_ntlm { 
-#      tls_insecure_skip_verify 
-# }
-#    }
-#}
+}
+}
 
 https://status.discordapp.com:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233 {
+    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://cdn.discordapp.com:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233 {
+    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://media.discordapp.net:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232 {
+    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://images-ext-2.discordapp.net:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232 {
+    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://images-ext-1.discordapp.net:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232 {
+    reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
 }
-
-#https://discordcdn.com:443 {
-#tls steamcommunity.crt steamcommunity.key
-#    reverse_proxy https://162.159.138.233 https://162.159.128.234 https://162.159.137.233 https://162.159.129.234 https://162.159.136.233 {
-#    
-#    header_up Host {host}
-#     transport http_ntlm { 
-#      tls_insecure_skip_verify 
-# }
-#    }
-#}
+}
+}
 
 https://support.discordapp.com:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://104.16.53.111 https://104.16.54.111 https://104.16.51.111 https://104.16.55.111 https://104.16.52.111 {
+    reverse_proxy https://104.16.53.111 https://104.16.54.111 https://104.16.51.111 https://104.16.55.111 https://104.16.52.111  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- }
-    }
+      tls_insecure_skip_verify
+}
+}
 }
 
 https://url7195.discordapp.com:443 {
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233 {
+    reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
      transport http_ntlm { 
-      tls_insecure_skip_verify 
- } 
-    }
+      tls_insecure_skip_verify
+}
+}
+}
+
+https://steamcdn-a.akamaihd.net:443 {
+    #tls self_signed
+    tls steamcommunity.crt steamcommunity.key
+        # default/catchall
+        reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net  {
+        header_up Host steamcdn-a.akamaihd.net
+}
+}
+
+https://origin-a.akamaihd.net:443 {
+tls steamcommunity.crt steamcommunity.key
+        reverse_proxy http://cctv4-lh.akamaihd.net http://moviesok-i.akamaihd.net http://vluki-a.akamaihd.net http://hgtv-i.akamaihd.net http://toots-a.akamaihd.net  {
+        header_up Host origin-a.akamaihd.net
+        header_up -X-Forwarded-For
+        header_down -X-Forwarded-For
+}
+}
+
+https://static3.cdn.ubi.com:443 {
+        tls steamcommunity.crt steamcommunity.key
+            # default/catchall
+            reverse_proxy https://static2.cdn.ubi.com  {
+            header_up Host static3.cdn.ubi.com
+}
 }
 
 https://www.google.com:443/recaptcha {
@@ -154,11 +165,7 @@ tls steamcommunity.crt steamcommunity.key
 https://www.google.com:443 {
 #tls self_signed
 tls steamcommunity.crt steamcommunity.key
-    reverse_proxy https://google.com {
-    
-    
-    
-    header_up Host www.google.com
-    }
+reverse_proxy https://google.com {
+   header_up Host www.google.com
 }
-
+}
