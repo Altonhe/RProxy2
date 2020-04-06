@@ -10,7 +10,8 @@ cp -f ${LOCAL_PATH}/start.sh $CADDY_PATH
 cp -f ${LOCAL_PATH}/steamcommunity.crt $CADDY_PATH
 cp -f ${LOCAL_PATH}/steamcommunity.key $CADDY_PATH
 cp -f ${LOCAL_PATH}/Caddyfile $CADDY_PATH
-cp -f ${LOCAL_PATH}/5efe33a8.0 /system/etc/security/cacerts/ 
+cp -f ${LOCAL_PATH}/cert.key $CADDY_PATH
+cp -f ${LOCAL_PATH}/cert.crt $CADDY_PATH
 
 
 

@@ -169,3 +169,76 @@ reverse_proxy https://google.com {
    header_up Host www.google.com
 }
 }
+
+
+
+https://pixiv.net, www.pixiv.net, ssl.pixiv.net, accounts.pixiv.net, touch.pixiv.net, oauth.secure.pixiv.net { 
+tls cert.crt cert.key
+reverse_proxy https://210.140.131.219 { 
+header_up Host {host} 
+
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}
+
+i.pximg.net {
+tls cert.crt cert.key
+reverse_proxy https://210.140.92.140 https://210.140.92.137 https://210.140.92.139 https://210.140.92.142 https://210.140.92.134 https://210.140.92.141 https://210.140.92.143 https://210.140.92.136 https://210.140.92.138 https://210.140.92.144 https://210.140.92.145 {
+header_up Host {host}
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}
+
+sketch.pixiv.net { 
+tls cert.crt cert.key 
+reverse_proxy https://210.140.214.211 https://210.140.214.212 https://210.140.214.213 { 
+header_up Host {host} 
+transport http_ntlm { 
+tls_insecure_skip_verify 
+} 
+}
+}
+
+*.pixivsketch.net { 
+tls cert.crt cert.key 
+reverse_proxy https://210.140.214.211 https://210.140.214.212 https://210.140.214.213 { 
+header_up Host {host} 
+transport http_ntlm { 
+tls_insecure_skip_verify 
+} 
+}
+}
+
+factory.pixiv.net { 
+tls cert.crt cert.key 
+reverse_proxy https://210.140.131.180 { 
+header_up Host {host} 
+transport http_ntlm { 
+tls_insecure_skip_verify 
+} 
+} 
+}
+
+dic.pixiv.net, en.dic.pixiv.net, sensei.pixiv.net, fanbox.pixiv.net, payment.pixiv.net {
+tls cert.crt cert.key
+reverse_proxy https://210.140.131.222 {
+header_up Host {host}
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}
+
+imgaz.pixiv.net, comic.pixiv.net, novel.pixiv.net, source.pixiv.net, i1.pixiv.net, i2.pixiv.net, i3.pixiv.net, i4.pixiv.net {
+tls cert.crt cert.key
+reverse_proxy https://210.140.131.145 https://210.140.131.144 https://210.140.131.147 https://210.140.131.153 {
+header_up Host {host}
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}

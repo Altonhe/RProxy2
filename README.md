@@ -2,14 +2,14 @@
 
 # Introduction
 
-A simple magisk module to achive local reverse proxy,so you can accsess discord&steamcommunity etc.It use [caddy2](https://github.com/caddyserver/caddy/releases) as a local reverse proxy  transfer data to specified server
+A simple magisk module to archive local reverse proxy,so you can access discord&steam community pixiv etc .It use [caddy2](https://github.com/caddyserver/caddy/releases) as a local reverse proxy to  transfer data to specified server
 
 ### Requirements
 * [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready)
 
 ## Install
 
-This module is still on developmentm,You can install by follow this steps
+This module is still on development,You can download it in release
 
 **make sure you have installed** **[edxposed](disable SSL verification) and [magisk](https://github.com/topjohnwu/Magisk/releases)**
 
@@ -40,11 +40,37 @@ This module is still on developmentm,You can install by follow this steps
 127.0.0.1 support.discordapp.com #S302
 127.0.0.1 url7195.discordapp.com #S302
 127.0.0.1 www.google.com #S302
+127.0.0.1 www.pixiv.net 
+127.0.0.1 ssl.pixiv.net
+127.0.0.1 accounts.pixiv.net 
+127.0.0.1 touch.pixiv.net
+127.0.0.1 oauth.secure.pixiv.net
+127.0.0.1 dic.pixiv.net
+127.0.0.1 en-dic.pixiv.net 
+127.0.0.1 sketch.pixiv.net
+127.0.0.1 payment.pixiv.net
+127.0.0.1 factory.pixiv.net 
+127.0.0.1 comic.pixiv.net  
+127.0.0.1 novel.pixiv.net 
+127.0.0.1 imgaz.pixiv.net 
+127.0.0.1 sensei.pixiv.net
+127.0.0.1 fanbox.pixiv.net
+127.0.0.1 i.pximg.net
+127.0.0.1 source.pixiv.net
+127.0.0.1 i1.pixiv.net 
+127.0.0.1 i2.pixiv.net 
+127.0.0.1 i3.pixiv.net 
+127.0.0.1 i4.pixiv.net 
+210.129.120.50 app-api.pixiv.net  
+74.120.148.207 g-client-proxy.pixiv.net 
+210.140.131.159 d.pixiv.org 
+210.140.92.135 pixiv.pximg.net  
+210.140.92.134 s.pximg.net
 ```
 
 4.reboot
 
-Normally you can access [steam](steamcommunity.com)now,for some roms you should add additional steps
+Normally you can access [steam](steamcommunity.com) now,**for** **some ROMS you should add additional steps**
 
 ```
 cd /data/local/caddy2
@@ -53,14 +79,16 @@ cd /data/local/caddy2
 
 ## Credits
 
-[Dogfight360](https://www.dogfight360.com/blog/):he's  steamcommunity 302 tool make this possible!
+[Dogfight360](https://www.dogfight360.com/blog/):he's  [steam community 302](https://www.dogfight360.com/blog/686/) inspire this program
 
-[magisk](https://github.com/topjohnwu/Magisk/releases):make this a module
+[Magisk](https://github.com/topjohnwu/Magisk/releases):make this a module
+
+[Pixiv-Nginx](https://github.com/mashirozx/Pixiv-Nginx):for support rules to proxy pixiv
 
 [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready):solve SSL verification 
 
-[Caddy2](https://github.com/caddyserver/caddy/releases) :Best Server!!!
+[Caddy2](https://github.com/caddyserver/caddy/releases) :A light&speed server to archive local reverse proxy
 
 ## Thanks
 
-[@Royz](https://github.com/RoyZ-CSGO):for add additional featuresf
+[@Royz](https://github.com/RoyZ-CSGO):for add additional features
