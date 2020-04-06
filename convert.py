@@ -25,7 +25,7 @@ if oweb !='' and tweb !='':
     c+=oweb + ' { \n'
     c+='tls steamcommunity.crt steamcommunity.key \n'
     c+='reverse_proxy '+tweb+' { \n'
-    c+='header_up Host {Host} ' +'\n'
+    c+='header_up Host {host} ' +'\n'
     if True:
         c+='transport http_ntlm { \n'
         c+='tls_insecure_skip_verify \n'
