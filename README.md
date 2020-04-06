@@ -40,7 +40,8 @@ This module is still on development,You can download it in release
 127.0.0.1 support.discordapp.com #S302
 127.0.0.1 url7195.discordapp.com #S302
 127.0.0.1 www.google.com #S302
-127.0.0.1 www.pixiv.net 
+127.0.0.1 www.pixiv.net
+127.0.0.1 pixiv.net 
 127.0.0.1 ssl.pixiv.net
 127.0.0.1 accounts.pixiv.net 
 127.0.0.1 touch.pixiv.net
