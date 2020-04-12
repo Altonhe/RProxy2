@@ -10,7 +10,7 @@ while True:
         break
     line1=re.findall(r'(?:[-\w.]|(?:%[\da-fA-F]{2}))+',line1)
     t.append(line1[0])
-    oweb=','.join(t)
+    oweb=', '.join(t)
 print('请输入要代理的网站')
 while True:
     line2 = sys.stdin.readline().strip().replace('server_name','')

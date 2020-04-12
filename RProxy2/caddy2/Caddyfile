@@ -242,3 +242,23 @@ tls_insecure_skip_verify
 }
 }
 }
+
+medium.com {
+tls cert.crt cert.key
+reverse_proxy https://104.16.120.127   {
+header_up Host {host}
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}
+
+*.medium.com {
+tls cert.crt cert.key
+reverse_proxy https://104.16.120.145  {
+header_up Host {host}
+transport http_ntlm {
+tls_insecure_skip_verify
+}
+}
+}

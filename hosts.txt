@@ -1,33 +1,3 @@
-# RProxy2
-
-## Introduction
-
-A simple magisk module to archive local reverse proxy,so you can access discord&steam community pixiv etc .It use [caddy2](https://github.com/caddyserver/caddy/releases) as a local reverse proxy to  transfer data to specified server
-
-### Requirements
-* [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready)
-
-## Support
-
-- [x] Pixiv
-- [x] Steam Community
-- [x] Discord
-- [x] Google(only reCAPTCHA)
-- [x] Medium
-
-## Install
-
-This module is still on development,You can download it in release
-
-**make sure you have installed** **[edxposed](disable SSL verification) and [magisk](https://github.com/topjohnwu/Magisk/releases)**
-
-1.install [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready)  to disable SSL verification 
-
-2.flash this mod via magisk
-
-3.add fellow hosts to `/system/etc/hosts`
-
-```
 223.119.248.19 steamuserimages-a.akamaihd.net #UHE_
 223.119.248.19 steamcdn-a.akamaihd.net #UHE_
 223.119.248.19 steamstore-a.akamaihd.net #UHE_
@@ -83,31 +53,3 @@ This module is still on development,You can download it in release
 127.0.0.1 cdn-static-1.medium.com
 127.0.0.1 cdn-images-1.medium.com
 127.0.0.1 cdn-images-2.medium.com
-```
-
-4.reboot
-
-Normally you can access [steam](steamcommunity.com) now,**for** **some ROMS you should add additional steps**
-
-```
-cd /data/local/caddy2
-./start.sh
-```
-
-## Credits
-
-[Dogfight360](https://www.dogfight360.com/blog/):he's  [steam community 302](https://www.dogfight360.com/blog/686/) inspire this program
-
-[Magisk](https://github.com/topjohnwu/Magisk/releases):make this a module
-
-[Pixiv-Nginx](https://github.com/mashirozx/Pixiv-Nginx):for support rules to proxy pixiv
-
-[TrustmeAlready](https://github.com/ViRb3/TrustMeAlready):solve SSL verification 
-
-[Caddy2](https://github.com/caddyserver/caddy/releases) :A light&speed server to archive local reverse proxy
-
-[newtrek](https://www.jianshu.com/u/a8649c5c66fe):Add medium support
-
-## Thanks
-
-[@Royz](https://github.com/RoyZ-CSGO):for add additional features
