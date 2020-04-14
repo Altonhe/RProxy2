@@ -12,14 +12,14 @@ A simple magisk module to archive local reverse proxy,so you can access discord&
 - [x] Pixiv
 - [x] Steam Community
 - [x] Discord
-- [x] Google(only reCAPTCHA)
+- [x] reCAPTCHA
 - [x] Medium
 
 ## Install
 
 This module is still on development,You can download it in release
 
-**make sure you have installed** **[edxposed](disable SSL verification) and [magisk](https://github.com/topjohnwu/Magisk/releases)**
+**make sure you have installed** **[edxposed](https://github.com/ElderDrivers/EdXposed) and [magisk](https://github.com/topjohnwu/Magisk/releases)**
 
 1.install [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready)  to disable SSL verification 
 
@@ -36,17 +36,30 @@ This module is still on development,You can download it in release
 223.119.248.19 eaassets-a.akamaihd.net #UHE_
 223.119.248.19 humblebundle-a.akamaihd.net #UHE_
 223.119.248.19 steamcommunity-a.akamaihd.net #UHE_
-127.0.0.1 steamcommunity.com #S302
-127.0.0.1 www.steamcommunity.com #S302
-127.0.0.1 discordapp.com #S302
-127.0.0.1 dl.discordapp.net #S302
-127.0.0.1 status.discordapp.com #S302
-127.0.0.1 cdn.discordapp.com #S302
-127.0.0.1 media.discordapp.net #S302
-127.0.0.1 images-ext-2.discordapp.net #S302
-127.0.0.1 images-ext-1.discordapp.net #S302
-127.0.0.1 support.discordapp.com #S302
-127.0.0.1 url7195.discordapp.com #S302
+127.0.0.1 steamcommunity.com
+127.0.0.1 www.steamcommunity.com
+127.0.0.1 discordapp.com
+127.0.0.1 dl.discordapp.net
+127.0.0.1 media.discordapp.net
+127.0.0.1 images-ext-2.discordapp.net
+127.0.0.1 images-ext-1.discordapp.net
+127.0.0.1 support.discordapp.com
+127.0.0.1 url9177.discordapp.com
+127.0.0.1 canary-api.discordapp.com
+127.0.0.1 cdn-ptb.discordapp.com
+127.0.0.1 ptb.discordapp.com
+127.0.0.1 status.discordapp.com
+127.0.0.1 cdn-canary.discordapp.com
+127.0.0.1 cdn.discordapp.com
+127.0.0.1 streamkit.discordapp.com
+127.0.0.1 i18n.discordapp.com
+127.0.0.1 url9624.discordapp.com
+127.0.0.1 url7195.discordapp.com
+127.0.0.1 merch.discordapp.com
+127.0.0.1 printer.discordapp.com
+127.0.0.1 canary.discordapp.com
+127.0.0.1 apps.discordapp.com
+127.0.0.1 pax.discordapp.com
 127.0.0.1 www.google.com #S302
 127.0.0.1 www.pixiv.net
 127.0.0.1 pixiv.net 
@@ -106,7 +119,7 @@ cd /data/local/caddy2
 
 [Caddy2](https://github.com/caddyserver/caddy/releases) :A light&speed server to archive local reverse proxy
 
-[newtrek](https://www.jianshu.com/u/a8649c5c66fe):Add medium support
+[newtrek](https://www.jianshu.com/u/a8649c5c66fe):support medium hosts rule
 
 ## Thanks
 

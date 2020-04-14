@@ -6,17 +6,30 @@
 223.119.248.19 eaassets-a.akamaihd.net #UHE_
 223.119.248.19 humblebundle-a.akamaihd.net #UHE_
 223.119.248.19 steamcommunity-a.akamaihd.net #UHE_
-127.0.0.1 steamcommunity.com #S302
-127.0.0.1 www.steamcommunity.com #S302
-127.0.0.1 discordapp.com #S302
-127.0.0.1 dl.discordapp.net #S302
-127.0.0.1 status.discordapp.com #S302
-127.0.0.1 cdn.discordapp.com #S302
-127.0.0.1 media.discordapp.net #S302
-127.0.0.1 images-ext-2.discordapp.net #S302
-127.0.0.1 images-ext-1.discordapp.net #S302
-127.0.0.1 support.discordapp.com #S302
-127.0.0.1 url7195.discordapp.com #S302
+127.0.0.1 steamcommunity.com
+127.0.0.1 www.steamcommunity.com
+127.0.0.1 discordapp.com
+127.0.0.1 dl.discordapp.net
+127.0.0.1 media.discordapp.net
+127.0.0.1 images-ext-2.discordapp.net
+127.0.0.1 images-ext-1.discordapp.net
+127.0.0.1 support.discordapp.com
+127.0.0.1 url9177.discordapp.com
+127.0.0.1 canary-api.discordapp.com
+127.0.0.1 cdn-ptb.discordapp.com
+127.0.0.1 ptb.discordapp.com
+127.0.0.1 status.discordapp.com
+127.0.0.1 cdn-canary.discordapp.com
+127.0.0.1 cdn.discordapp.com
+127.0.0.1 streamkit.discordapp.com
+127.0.0.1 i18n.discordapp.com
+127.0.0.1 url9624.discordapp.com
+127.0.0.1 url7195.discordapp.com
+127.0.0.1 merch.discordapp.com
+127.0.0.1 printer.discordapp.com
+127.0.0.1 canary.discordapp.com
+127.0.0.1 apps.discordapp.com
+127.0.0.1 pax.discordapp.com
 127.0.0.1 www.google.com #S302
 127.0.0.1 www.pixiv.net
 127.0.0.1 pixiv.net 

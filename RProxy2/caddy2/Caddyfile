@@ -169,7 +169,15 @@ reverse_proxy https://google.com {
    header_up Host www.google.com
 }
 }
-
+https://url9177.discordapp.com https://canary-api.discordapp.com https://cdn-ptb.discordapp.com https://ptb.discordapp.com https://status.discordapp.com https://cdn-canary.discordapp.com https://cdn.discordapp.com https://streamkit.discordapp.com https://i18n.discordapp.com https://url9624.discordapp.com https://url7195.discordapp.com https://merch.discordapp.com https://printer.discordapp.com https://canary.discordapp.com https://apps.discordapp.com https://pax.discordapp.com  {
+tls steamcommunity.crt steamcommunity.key
+reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
+header_up Host {host}
+transport http_ntlm { 
+tls_insecure_skip_verify
+}
+}
+}
 
 
 https://pixiv.net, www.pixiv.net, ssl.pixiv.net, accounts.pixiv.net, touch.pixiv.net, oauth.secure.pixiv.net { 
@@ -262,3 +270,4 @@ tls_insecure_skip_verify
 }
 }
 }
+
