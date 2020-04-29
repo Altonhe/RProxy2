@@ -33,7 +33,7 @@ ciphers TLS_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA TLS_RSA_WITH_
     reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -47,7 +47,7 @@ ciphers TLS_RSA_WITH_3DES_EDE_CBC_SHA TLS_RSA_WITH_AES_128_CBC_SHA TLS_RSA_WITH_
     reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -58,7 +58,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -69,7 +69,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -80,7 +80,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -91,7 +91,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -102,7 +102,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.232 https://162.159.134.232 https://162.159.129.232 https://162.159.130.232 https://162.159.128.232  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -113,7 +113,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://104.16.53.111 https://104.16.54.111 https://104.16.51.111 https://104.16.55.111 https://104.16.52.111  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -124,7 +124,7 @@ tls steamcommunity.crt steamcommunity.key
     reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
     
     header_up Host {host}
-     transport http_ntlm { 
+     transport http { 
       tls_insecure_skip_verify
 }
 }
@@ -173,7 +173,7 @@ https://url9177.discordapp.com https://canary-api.discordapp.com https://cdn-ptb
 tls steamcommunity.crt steamcommunity.key
 reverse_proxy https://162.159.133.233 https://162.159.129.233 https://162.159.130.233 https://162.159.134.233 https://162.159.135.233  {
 header_up Host {host}
-transport http_ntlm { 
+transport http { 
 tls_insecure_skip_verify
 }
 }
@@ -185,7 +185,7 @@ tls cert.crt cert.key
 reverse_proxy https://210.140.131.219 { 
 header_up Host {host} 
 
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
@@ -195,7 +195,7 @@ i.pximg.net {
 tls cert.crt cert.key
 reverse_proxy https://210.140.92.140 https://210.140.92.137 https://210.140.92.139 https://210.140.92.142 https://210.140.92.134 https://210.140.92.141 https://210.140.92.143 https://210.140.92.136 https://210.140.92.138 https://210.140.92.144 https://210.140.92.145 {
 header_up Host {host}
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
@@ -205,7 +205,7 @@ sketch.pixiv.net {
 tls cert.crt cert.key 
 reverse_proxy https://210.140.214.211 https://210.140.214.212 https://210.140.214.213 { 
 header_up Host {host} 
-transport http_ntlm { 
+transport http { 
 tls_insecure_skip_verify 
 } 
 }
@@ -215,7 +215,7 @@ tls_insecure_skip_verify
 tls cert.crt cert.key 
 reverse_proxy https://210.140.214.211 https://210.140.214.212 https://210.140.214.213 { 
 header_up Host {host} 
-transport http_ntlm { 
+transport http { 
 tls_insecure_skip_verify 
 } 
 }
@@ -225,7 +225,7 @@ factory.pixiv.net {
 tls cert.crt cert.key 
 reverse_proxy https://210.140.131.180 { 
 header_up Host {host} 
-transport http_ntlm { 
+transport http { 
 tls_insecure_skip_verify 
 } 
 } 
@@ -235,7 +235,7 @@ dic.pixiv.net, en.dic.pixiv.net, sensei.pixiv.net, fanbox.pixiv.net, payment.pix
 tls cert.crt cert.key
 reverse_proxy https://210.140.131.222 {
 header_up Host {host}
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
@@ -245,7 +245,7 @@ imgaz.pixiv.net, comic.pixiv.net, novel.pixiv.net, source.pixiv.net, i1.pixiv.ne
 tls cert.crt cert.key
 reverse_proxy https://210.140.131.145 https://210.140.131.144 https://210.140.131.147 https://210.140.131.153 {
 header_up Host {host}
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
@@ -255,7 +255,7 @@ medium.com {
 tls cert.crt cert.key
 reverse_proxy https://104.16.120.127   {
 header_up Host {host}
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
@@ -265,9 +265,18 @@ tls_insecure_skip_verify
 tls cert.crt cert.key
 reverse_proxy https://104.16.120.145  {
 header_up Host {host}
-transport http_ntlm {
+transport http {
 tls_insecure_skip_verify
 }
 }
 }
 
+raw.githubusercontent.com {
+tls cert.crt cert.key
+reverse_proxy https://151.101.64.133   {
+header_up Host {host}
+transport http {
+tls_insecure_skip_verify
+}
+}
+}

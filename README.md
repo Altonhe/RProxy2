@@ -14,6 +14,7 @@ A simple magisk module to archive local reverse proxy,so you can access discord&
 - [x] Discord
 - [x] reCAPTCHA
 - [x] Medium
+- [x] Githubusercontent
 
 ## Install
 
@@ -27,7 +28,7 @@ This module is still on development,You can download it in release
 
 3.add fellow hosts to `/system/etc/hosts`
 
-```
+```hosts
 223.119.248.19 steamuserimages-a.akamaihd.net #UHE_
 223.119.248.19 steamcdn-a.akamaihd.net #UHE_
 223.119.248.19 steamstore-a.akamaihd.net #UHE_
@@ -96,6 +97,7 @@ This module is still on development,You can download it in release
 127.0.0.1 cdn-static-1.medium.com
 127.0.0.1 cdn-images-1.medium.com
 127.0.0.1 cdn-images-2.medium.com
+127.0.0.1 raw.githubusercontent.com
 ```
 
 4.reboot
