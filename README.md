@@ -42,6 +42,9 @@ This module is still on development,You can download it in release
 223.119.248.19 eaassets-a.akamaihd.net #UHE_
 223.119.248.19 humblebundle-a.akamaihd.net #UHE_
 223.119.248.19 steamcommunity-a.akamaihd.net #UHE_
+127.0.0.1 steamcdn-a.akamaihd.net
+127.0.0.1 origin-a.akamaihd.net
+127.0.0.1 steam-chat.com
 127.0.0.1 steamcommunity.com
 127.0.0.1 www.steamcommunity.com
 127.0.0.1 discordapp.com

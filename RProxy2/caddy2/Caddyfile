@@ -280,3 +280,32 @@ tls_insecure_skip_verify
 }
 }
 }
+
+steamcdn-a.akamaihd.net {
+tls cert.crt cert.key
+reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://steampipe.akamaized.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net   {
+header_up Host {host}
+transport http {
+tls_insecure_skip_verify
+}
+}
+}
+
+origin-a.akamaihd.net {
+tls cert.crt cert.key
+reverse_proxy http://cctv4-lh.akamaihd.net http://moviesok-i.akamaihd.net http://vluki-a.akamaihd.net http://hgtv-i.akamaihd.net http://toots-a.akamaihd.net   {
+header_up Host {host}
+}
+}
+
+steam-chat.com {
+tls cert.crt cert.key
+reverse_proxy https://steamuserimages-a.akamaihd.net https://steamstore-a.akamaihd.net https://steamcommunity-a.akamaihd.net https://eaassets-a.akamaihd.net https://humblebundle-a.akamaihd.net https://steamcommunity-a.akamaihd.net   {
+header_up Host {host}
+transport http {
+tls_insecure_skip_verify
+}
+}
+}
+
+
