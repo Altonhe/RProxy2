@@ -19,4 +19,7 @@ cp -f ${LOCAL_PATH}/cert.crt $CADDY_PATH
 chmod 777 "${CADDY_PATH}/caddy"
 chmod 777 "${CADDY_PATH}/start.sh"
 
+sleep 20
+su -c "/data/local/caddy2/start.sh"
+
 

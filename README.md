@@ -33,6 +33,9 @@ This module is still on development,You can download it in release
 
 3.add fellow hosts to `/system/etc/hosts`
 
+> if you use adaway to manage hosts, you may add this to rule
+> ` https://raw.githubusercontent.com/Altonhe/RProxy2/master/hosts.txt`
+
 ```hosts
 223.119.248.19 steamuserimages-a.akamaihd.net #UHE_
 223.119.248.19 steamcdn-a.akamaihd.net #UHE_
@@ -112,9 +115,8 @@ This module is still on development,You can download it in release
 
 Normally you can access [steam](steamcommunity.com) now,**for** **some ROMS you should add additional steps**
 
-```
-cd /data/local/caddy2
-./start.sh
+```bash 
+su -c "/data/local/caddy2/start.sh"
 ```
 
 ## Credits
