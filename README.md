@@ -17,7 +17,7 @@ A simple magisk module to archive local reverse proxy,so you can access discord&
 - [x] Pixiv
 - [x] Steam Community
 - [x] Discord
-- [x] reCAPTCHA
+- ~~[ ]reCAPTCHA~~
 - [x] Medium
 - [x] Githubusercontent
 
@@ -72,7 +72,6 @@ This module is still on development,You can download it in release
 127.0.0.1 canary.discordapp.com
 127.0.0.1 apps.discordapp.com
 127.0.0.1 pax.discordapp.com
-127.0.0.1 www.google.com #S302
 127.0.0.1 www.pixiv.net
 127.0.0.1 pixiv.net 
 127.0.0.1 ssl.pixiv.net
