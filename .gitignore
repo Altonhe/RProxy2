@@ -4,7 +4,6 @@
 *.dll
 *.so
 *.dylib
-*.py
 *.zip
 
 # Dependency directories (remove the comment below to include it)
@@ -12,7 +11,7 @@
 test/
 
 .idea
-
+tmp/
 
 
 

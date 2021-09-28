@@ -3,11 +3,11 @@
 ## Introduction
 
 A simple magisk module to archive local reverse proxy,so you can access discord&steam community pixiv etc .It use [caddy2](https://github.com/caddyserver/caddy/releases) as a local reverse proxy to  transfer data to specified server
-<figure class="third">
+<div display="block">
 <img src="https://altonhe.github.io/medias/RProxy/1.jpeg" width="30%" height="30%" >
 <img src="https://altonhe.github.io/medias/RProxy/2.jpeg" width="30%" height="30%">
 <img src="https://altonhe.github.io/medias/RProxy/3.jpeg" width="30%" height="30%">
-</figure>
+</div>
 
 ### Requirements
 * [TrustmeAlready](https://github.com/ViRb3/TrustMeAlready)
@@ -17,7 +17,7 @@ A simple magisk module to archive local reverse proxy,so you can access discord&
 - [x] Pixiv
 - [x] Steam Community
 - [x] Discord
-- ~~[ ]reCAPTCHA~~
+- [ ] ~~reCAPTCHA~~
 - [x] Medium
 - [x] Githubusercontent
 

@@ -1,0 +1,33 @@
+name: Build
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.py'
+      - '.github/workflows/build.yml'
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8.3'
+      - name: Install Dependencies
+        run: pip3 install -r requirements.txt
+      - name: Build Magisk Module
+        run: python3 build.py
+      - name: Release Module
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          automatic_release_tag: latest
+          prerelease: false
+          title: "Latest Build"
+          files: |
+            LICENSE
+            RProxy.zip
+
