@@ -5,6 +5,7 @@ on:
     paths:
       - '**.py'
       - '.github/workflows/build.yml'
+      - 'Caddyfile'
 
 jobs:
   build:
